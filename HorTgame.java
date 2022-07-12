@@ -13,6 +13,8 @@ public class HorTgame {
 	Random random = new Random();
 	int randomValue = random.nextInt(2);
 	int i;
+	int h_c=0;
+	int t_c=0;
 	
 	for( i = 1 ; i <= 3; i++ )
 	{
@@ -21,15 +23,17 @@ public class HorTgame {
 	    if(random.nextInt(2)+1 == 1)
 	    {
 		System.out.println("Heads");
+		h_c++;
 	    }
 	    else
 	    {
 		System.out.println("Tails");
+		t_c++;
 	    }
 
 	}
 
-	System.out.println("Heads: 1, Tails: 2");
+	System.out.println("Heads: " + h_c +", Tails: " + t_c);
 	
     }
 }

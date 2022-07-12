@@ -34,6 +34,9 @@ public class HorTgame {
 	}
 
 	System.out.println("Heads: " + h_c +", Tails: " + t_c);
+
+	if( h_c > t_c ) System.out.println("You won");
+	else System.out.println("You lost");
 	
     }
 }

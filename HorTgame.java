@@ -1,4 +1,5 @@
 import java.util.Random;
+import java.util.Scanner;
 
 public class HorTgame {
     
@@ -8,6 +9,12 @@ public class HorTgame {
 
     public static void main( String[] args)
     {
+	Scanner sc = new Scanner(System.in);
+
+	System.out.println("Who are you?");
+	String name = sc.nextLine();
+	System.out.println("Hello, " + name);
+       
 	System.out.println("Tossing a coin...");
 
 	Random random = new Random();
@@ -35,8 +42,8 @@ public class HorTgame {
 
 	System.out.println("Heads: " + h_c +", Tails: " + t_c);
 
-	if( h_c > t_c ) System.out.println("You won");
-	else System.out.println("You lost");
+	if( h_c > t_c ) System.out.println( name + " won");
+	else System.out.println(name + " lost");
 	
     }
 }
